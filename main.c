@@ -18,7 +18,7 @@ int printMatrix(int matrix[SIZE][SIZE], int sideMatrix[SIZE]){
 }
 
 int scanfFillMatrix(int matrix[SIZE][SIZE], int sideMatrix[SIZE]){
-    printf("Заполните матрицу:\n");
+    printf("Enter the matrix values:\n");
     for (unsigned short i = 0; i < SIZE; i++)
     {
         for (unsigned short j = 0; j < SIZE; j++)
@@ -39,7 +39,7 @@ int scanfFillMatrix(int matrix[SIZE][SIZE], int sideMatrix[SIZE]){
 }
 
 int main(void){
-    printf("Укажите размер матрицы: ");
+    printf("Enter matrix size: ");
     scanf("%d\n", &SIZE);
 
     static const int _size;
@@ -64,7 +64,7 @@ int main(void){
             b[i] = b[i] - b[step] * q;
         }
         printf("\n");
-        printf("Шаг: %d\n", step + 1);
+        printf("Step: %d\n", step + 1);
         printMatrix(x, b);
     }
     
